@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicioFragment"
+            android:title="@string/inicio"/>
+        <item
+            android:id="@+id/categoriasFragment"
+            android:title="@string/categorias" />
+        <item
+            android:id="@+id/carritoFragment"
+            android:title="@string/carrito" />
+        <item
+            android:id="@+id/perfilFragment"
+            android:title="@string/perfil" />
+        <item
+            android:id="@+id/productosFragment"
+            android:title="@string/productos" />
+    </group>
+</menu>

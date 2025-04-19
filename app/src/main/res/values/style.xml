@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo base para EditText -->
+    <style name="EditTextRounded" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text_rounded</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!-- Estilo para Button basado en EditText -->
+    <style name="ButtonRounded" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="ButtonOval" parent="@style/Widget.Material3.Button.ElevatedButton.Icon">
+        <item name="android:buttonCornerRadius">160dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+</resources>

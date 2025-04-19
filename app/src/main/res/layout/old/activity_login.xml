@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!--EditText para ingresar el nombre del usuario-->
+    <EditText
+        android:id="@+id/etuser_login"
+        style="@style/EditTextRounded"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <!--EditText para ingresar la contraseña del usuario-->
+    <EditText
+        android:id="@+id/etuser_password"
+        style="@style/EditTextRounded"
+        android:layout_width="271dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/hintPutPass"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etuser_login"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <!--Button para ingresar con Google-->
+
+    <!--Button para ingresar a la aplicación-->
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="234dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="serif"
+        android:padding="1dp"
+        android:text="@string/log_in"
+        android:textColor="@color/bluedark"
+        android:textSize="30dp"
+        app:cornerRadius="30dp"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etuser_password"
+        app:strokeColor="@color/bluedark"
+        app:strokeWidth="3dp" />
+
+    <!--ImageView de los iconos de usuario y clave-->
+
+    <!--ImageView del logo principal de la App-->
+    <ImageView
+        android:id="@+id/iv_mainlogo"
+        android:layout_width="105dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/mainlogo" />
+
+    <!--TextView del nombre de la App-->
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_mainlogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TextView con el texto de bienvenida a la App-->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_appname" />
+
+    <!--TextView con el link para que el usuario pueda recuperar su contraseña-->
+    <TextView
+        android:id="@+id/tv_recovery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/recovery"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_login" />
+
+    <!--TextView que pregunta al usuario si tiene cuenta-->
+
+    <!--TextView con el link para que el usuario se pueda registrar en la App-->
+
+    <TextView
+        android:id="@+id/tv_accountoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/accountoff"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recovery" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recovery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
